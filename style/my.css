@@ -1,0 +1,504 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: rgb(40,40,40);
+    font-family: 'Exo 2', 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: rgb(240,240,240);
+	overflow: hidden;  
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 45px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+p {
+	font-size: 18px;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	text-align: justify;
+	line-height: 35px;
+	text-indent: 50px;
+}
+
+a {
+	color: rgb(40, 40, 40);
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(40,40,40,.5);
+}
+
+#mainNav {
+	position: fixed;
+	z-index: 2;
+	right: 0;
+	top: 0;
+	transition: .2s;
+	transition: height .2s ease-out;
+}
+#mainNav .collapseBt {
+	display: none;
+	transition: .5s;
+}
+#mainNav .navWrapper {
+	background-color: rgba(240,240,240,.5);
+	display: inline-table;
+	position: relative;
+	transition: .2s;
+}
+#mainNav .navWrapper a {
+	background: rgba(40,40,40,.8);
+	color: rgb(240,240,240);
+	display: table-cell;
+	font-size: 12px;
+	font-weight: inherit;
+	padding: 14px 30px;
+	position: relative;
+	transition: .2s;
+	letter-spacing: 4px;
+}
+#mainNav .navWrapper:nth-child(3) {
+	left: 4px;
+}
+#mainNav .navWrapper:nth-child(2) {
+	left: 8px;
+}
+#mainNav .navWrapper a:hover {
+	color: rgb(255,255,255);
+	background: rgba(40,40,40,.4);
+}
+#mainNav .navWrapper:hover {
+}
+#mainNav .navWrapper a i {
+	font-size: 12px;
+}
+
+#mainContainer {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: .8s;
+	transition-timing-function: ease-out;
+	-webkit-transition: .8s;
+	-webkit-transition-timing-function: ease-out;
+}
+#mainContainer .wrapper {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	transition: .8s;
+	transition-timing-function: ease-out;
+	-webkit-transition: .8s;
+	-webkit-transition-timing-function: ease-out;
+}
+
+/*	First Page ============== */
+#mainContainer .wrapper:nth-child(1) {
+	background: url("../img/mountain.jpg") center no-repeat fixed;
+	background-size: cover;
+}
+
+/* 1366
+   638		*/
+header {
+	background: rgba(240,240,240,.5);
+	font-size: 45px;
+	text-align: center;
+	position: inherit;
+	width: 0;
+	height: 0;
+	margin: -500px;
+	animation: fadeOut 3s ease-out;
+	transition: all 0.5s ease-out 0.5s;
+	opacity: 1;
+}
+header h1 {
+	margin-top: 15px;
+	transition:	1s ease-in .5s;
+	margin-left: -800px;
+	color: rgba(0,0,0,0);
+}
+header .content {
+	padding: 20px 40px;
+	height: 75%;
+	overflow-y: auto;
+}
+header .content .thumbnail {
+	background: url("https://github.com/forwebtech.png") center/100% no-repeat;
+	width: 150px;
+	height: 150px;
+	border-radius: 3px;
+	float: left;
+	margin: 15px 25px 15px 0;
+}
+header .content .border {
+	text-align: center;
+}
+
+#skillContainer {
+	width: 100%;
+	text-align: center;
+}
+h2.tagHead {
+	font-size: 20px;
+	font-family: 'Exo 2', sans-serif;
+	text-align: center;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+#skillContainer h2 {
+	text-align: left;
+	margin-left: 15%;
+	margin-top: 40px;
+	transition: 1s;
+}
+#skillContainer .techsBlock {
+	text-align: left;
+}
+#skillContainer .techsBlock .skill {
+	background: rgb(240,240,240);
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 126px;
+	padding: 8px 0;
+	margin-left: 0;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	transition-duration: .2s, .7s;
+	transition-property: background, color;
+	display: none;
+	/*animation: skillBoxes 4s ease-in;*/
+}
+#skillContainer .techsBlock .skill:hover {
+	background: rgb(40,40,40);
+	color: rgb(240,240,240);
+}
+
+header .footer {
+	background: rgba(40,40,40,.2);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0;
+}
+header .footer .text {
+	letter-spacing: 2px;
+}
+header .footer a {
+	padding: 18px 10px 6px 10px;
+	border-bottom: 6px solid rgb(240,240,240);
+	margin-left: -5px;
+}
+header .footer a:nth-child(2) {
+	border-bottom-color: rgba(50,49,49,.9);
+}
+header .footer a:nth-child(3) {
+	border-bottom-color: rgba(59,89,152,.9);
+}
+header .footer a:nth-child(4) {
+	border-bottom-color: rgba(0,100,0,.9);
+}
+header .footer a:hover > .fa {
+	/*color: rgb(40,40,40);*/
+}
+
+/*	Projects Showcase ================= */
+	section, footer{
+		text-align: center;
+		vertical-align: middle;
+	}
+	section > .content {
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 60px;
+		padding: 10px 60px;
+		/*outline: 5px solid rgba(0,200,0,.3);*/
+		overflow: hidden;
+	}
+	section h2 {
+		background: rgb(40,40,40);
+		position: relative;
+		top: -41px;
+		padding: 0 10px 0 18px;
+		display: inline-block;
+	}
+	section hr {
+		border: 1px solid rgb(240,240,240);
+		margin-top: 11px;
+	}
+	#pContainer {
+		position: inherit;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 120px 60px 60px 60px;
+		text-align: left;
+		white-space: nowrap;
+		overflow: hidden;
+		transition: left .5s ease-in;
+		/*outline: 5px solid rgba(0,200,0,.5);*/
+	}
+	#pContainer .pWrapper {
+		position: relative;
+		display: inline-block;
+		height: 100%;
+		width: 267px;
+		text-align: center;
+		margin-right: 20px;
+		left: 0;
+		transition: left .5s ease-in;
+	}
+	#pContainer .pWrapper:last-child {
+		margin-right: 0;
+	}
+	#pContainer .pWrapper .project {
+		border-radius: 2px;
+		background: rgba(240,240,240,0.1);
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 20px;
+		overflow: hidden;
+		transition: .7s ease-out .3s;
+	}
+	#pContainer .pWrapper .project .pImage {
+		border-radius: 4px;
+		box-shadow: 2px 2px 5px rgb(0,0,0);
+		display: block;
+		width: 100%;
+		height: 100%;
+		opacity: .2;
+		transition: inherit;
+	}
+	#pContainer .pWrapper .project .pImage a {
+		bottom: 20px;
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		top: 20px;
+	}
+	#pContainer .pWrapper .project .pImage:nth-child(1) {
+		background: url("../img/projects/first.png") top center/cover no-repeat;
+	}
+	#pContainer .pWrapper .project .contentWrapper {
+		display: table;
+		width: 100%;
+		height: 100%;
+		position: inherit;
+		top: 0;
+		left: 0;
+		transition: .5s ease-in-out;
+	}
+	#pContainer .pWrapper .project .contentWrapper .content {
+		display: table-cell;
+		vertical-align: middle;
+		background: rgba(0,0,0,.9);
+	}
+	#pContainer .pWrapper .project .contentWrapper .content p {
+		width: 226px;
+		display: block;
+		height: auto;
+		white-space: pre-wrap;
+		text-align: center;
+		padding: 0 20px;
+	}
+	#pContainer .pWrapper .project:hover > .contentWrapper {
+		margin-left: -290px;
+	}
+	#pContainer .pWrapper .project:hover > .pImage {
+		transform: scale(1.2,1.2);
+		opacity: 1;
+	}
+
+	section > .projectButton {
+		cursor: pointer;
+		position: absolute;
+		top: 250px;
+		z-index: 1;
+	}
+	section > .projectButton > i {
+		color: rgba(240,240,240, .5);
+		font-size: 60px;
+		transition: .1s ease-in;
+	}
+	section > .projectButton:hover i {
+		color: rgba(240,240,240);
+	}
+	section > #leftBt {
+		left: 0;
+		padding: 0px 22px 4px 18px;
+	}
+	section > #rightBt {
+		right: 0px;
+		padding: 0px 18px 4px 22px;
+	}
+/*	Projects Showcase Ends ============ */
+
+#contact > .contactContainer {
+	display: table;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#contact > .contactContainer > h2 {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20%;
+}
+
+#footerContainer {
+	position: absolute;
+	background: black;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#footerContainer footer {
+	padding: 20px;
+}
+#footerContainer footer, #footerContainer footer a {
+	font-size: 13px;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	text-transform: none;
+	transition: .1s ease-out;
+}
+#footerContainer footer a:hover {
+	color: rgba(240,240,240,.3);
+}
+
+/* ========= Classes snippets ============= */
+	.dots::after {
+		font-size: 40px;
+		animation: dots 1s infinite;
+	}
+	.black-text {
+		color: rgba(40,40,40,.7);
+	}
+	.white-text {
+		color: rgb(240,240,240);
+	}
+	.text-center {
+		text-align: center;
+	}
+	.transparent {
+		color: rgba(0,0,0,0);
+		transition-property: color;
+		transition-duration: .5s;
+	}
+	.fa {
+		font-size: 25px;
+		cursor: pointer;
+		transition: .1s ease-out;
+	}
+
+	.disabled {
+	   pointer-events: none;
+	   cursor: default;
+	   opacity: .2;
+	}
+/* ========= Classes snippets ends ======== */
+
+
+/* ============= Key Frames =============== */
+@keyframes dots {
+	0% { content: ""; }
+	15% { content: "."; }
+	30% { content: ".." }
+	45% { content: "..." }
+	60% { content: ".." }
+	75% { content: "." }
+	100% { content: "" }
+}
+
+@keyframes skillBoxes {
+	0% {
+		margin: -500px;
+	}
+	100% {
+		margin: 0;
+	}
+}
+
+@keyframes fadeOut {
+	0% { opacity: 0; }
+	50% { opacity: .5; }
+	100% { opacity: 1; }
+}
+
+/* ========== Key Frames Ends ============= */
+
+/* Media Queries ========================== */
+	@media screen and (max-width: 515px) {
+		#mainNav {
+			cursor: pointer;
+		    position: fixed;
+		    right: 0;
+		    top: 0;
+		    left: 0;
+		    height: 35px;
+			overflow: hidden;
+			opacity: .4;
+		    z-index: 2;
+		}
+		#mainNav:hover {
+			opacity: 1;
+		}
+		#mainNav:hover > .collapseBt {
+			background: rgba(0,0,0,.8);
+		}
+		#mainNav .collapseBt {
+			background: rgba(0,0,0,.8);	/* For browsers that do not support gradients */
+			background: linear-gradient(to right, rgba(0,0,0,.8), transparent);
+			display: block;
+			font-size: 14px;
+			font-weight: bolder;
+			position: relative;
+			width: 100%;
+			padding: 10px 0 10px 30px;
+			letter-spacing: 3px;
+
+		}
+
+
+		#mainNav .collapseBt i {
+			font-size: 16px;
+		}
+
+		#mainNav .navWrapper {
+		    display: block;
+		}
+		#mainNav .navWrapper:nth-child(3) {
+		    left: 0;
+		}
+		#mainNav .navWrapper:nth-child(2) {
+		    left: 0;
+		}
+		#mainNav .navWrapper a {
+		    display: block;
+		}
+	}
+/* Media Queries Ends ===================== */

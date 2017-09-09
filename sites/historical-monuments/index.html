@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Historical Monuments | Provides the information of monuments of the world</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" href="img/fav.ico" type="image/x-icon">
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/func.js" type="text/javascript"></script>
+	<script src="js/smoothscroll.js" type="text/javascript"></script>
+	
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/default.css">
+   	
+	
+
+</head>
+
+
+<body>
+
+<!-- Main Container -->
+<div id="main_container" class="container-fluid">
+
+	<a href="#header_container" class="smoothScroll"><div id="up_bt"></div></a>
+
+	<div class="row" id="header_container">
+	
+		<div class="col-lg-12">
+            <img src="img/head_bg.png" alt="bg for header">
+            <div id="hd_title_container">
+				<div class="title">
+					<h1>HISTORICAL MONUMENTS</h1>
+				</div>
+			</div>
+        </div>
+
+	</div> <!-- #head_container -->
+    
+    
+	<!-- Main Navigation -->
+    <div class="row" id="nav_container">
+    
+		<!--<div class="bt_border"></div>-->
+    	<nav class="navbar navbar-default" role="navigation">
+   
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+   
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+	
+				<ul>
+					<li class="home"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+			
+					<li class="my_dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							MONUMENTS
+						<b class="caret"></b>
+						</a>
+						<ul>
+							<li><a href="monuments/north.html">North</a></li>
+							<li><a href="monuments/east.html">East</a></li>
+							<li><a href="monuments/west.html">West</a></li>
+							<li><a href="monuments/south.html">South</a></li>
+						</ul>
+					</li>
+					<li><a href="#wonders" class="smoothScroll">WONDERS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="#footer_lnks" class="smoothScroll">CONTACT US</a></li>
+					<li><a href="feedback.html">FEEDBACK</a></li>
+				</ul>
+			</div>
+   
+		</nav>
+    
+    </div> <!-- #nav_container -->
+	
+	
+	<!-- Slider Grid -->
+    <div class="row" id="slider_grid">
+	
+		<div class="col-lg-12" onclick="grid_system(event)">
+		
+			<div class="items"><img src="img/slider/img1.jpg" name="grid1"></div>
+			
+			<div class="items"><img src="img/slider/img2.jpg" name="grid2"></div>
+			
+			<div class="items"><img src="img/slider/img3.jpg" name="grid3"></div>
+			
+			<div class="items"><img src="img/slider/img4.jpg" name="grid4"></div>
+			
+			<div class="items"><img src="img/slider/img5.jpg" name="grid5"></div>
+			
+			<div class="items"><img src="img/slider/img6.jpg" name="grid6"></div>
+			
+			<div class="items"><img src="img/slider/img7.jpg" name="grid7"></div>
+			
+			<div class="items"><img src="img/slider/img8.jpg" name="grid8"></div>
+			
+		</div>
+	
+	</div> <!-- #slider_grid -->
+	
+	<!-- Slider -->
+	<div class="row" id="slider">
+	
+		<div class="col-lg-12">
+		
+			<div class="slider_container">
+				<div class="shadow"></div>
+				<img src="img/slider/img1-1140x600.jpg" name="slider_image">
+				<div class="text_container">
+					<div id="slide_text1">
+						<h2>Heading 1</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text2">
+						<h2>Heading 2</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text3">
+						<h2>Heading 3</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text4">
+						<h2>Heading 4</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text5">
+						<h2>Heading 5</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text6">
+						<h2>Heading 6</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text7">
+						<h2>Heading 7</h2>
+						<p>some content.....</p>
+					</div>
+					<div id="slide_text8">
+						<h2>Heading 8</h2>
+						<p>some content.....</p>
+					</div>
+				
+				</div>
+			</div>
+		
+		</div>
+	
+	</div> <!-- #slider-->
+	
+	
+	<!-- Search -->
+	<div class="row" id="search">
+	
+		<div class="col-lg-12">
+			
+			<div id="search_lt_box">
+			
+				<div class="text">WANT TO <span style="letter-spacing: 10px">SEARCH!</span></div>
+				<div class="arrow"><img src="img/arrow.png"></div>
+			
+			</div>
+			
+			<div id="search_rt_box">
+				<input type="search" id="search_input">
+				<img src="img/book.png" id="book" class="" onclick="getSearch()">
+			</div>
+			
+		</div>
+	
+	</div> <!-- #search -->
+	
+	
+	<!-- Ad area -->
+    <div class="row" id="ad_area">
+	
+		<div class="col-lg-12">
+		
+			
+			<div class="main">
+			
+				<div id="ad_title">Travel around the world</div>
+				<div id="ad_content">
+					ADVERTISEMENT
+				</div>
+				<img src="img/ad/locations.png" class="places">
+			</div>
+			
+			<div class="stripe"></div>
+		
+		</div>
+	
+	</div> <!-- #ad_area -->
+	
+	
+	<!-- Wonders -->
+	<div class="row" id="wonders">
+	
+		<div class="col-lg-12">
+		
+			<div class="bg"></div>
+			<div class="bt_container">
+				<div class="bt">
+					<a href="wonders.html"><button type="button">WONDERS OF THE WORLD</button></a>
+				</div>
+			</div>
+		
+		</div>
+	
+	</div> <!-- #wonders -->
+	
+	<!-- Footer -->
+	
+	<div class="row" id="footer_lnks">
+	
+		<!-- Main links -->
+		<div class="col-lg-4 col-md-4 col-sm-4 ft_padding" id="ft_links">
+			<div class="box">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="#nav_container" class="smoothScroll">Monuments</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+				</ul>
+			</div>
+		</div> <!-- #ft_links -->
+		
+		<!-- Recent Posts -->
+		<div class="col-lg-4 col-md-4 col-sm-4 ft_padding" id="recent">
+		
+			<div class="box">
+			
+				<h2>Recent Posts</h2>
+				<ul>
+					<li><a href="#">Lorem Ipsum ...</a></li>
+					<li><a href="#">Lorem Ipsum ...</a></li>
+					<li><a href="#">Lorem Ipsum ...</a></li>
+					<li><a href="#">Lorem Ipsum ...</a></li>
+					<li><a href="#">Lorem Ipsum ...</a></li>
+					<li><a href="#">Lorem Ipsum ...</a></li>
+				</ul>
+				
+			</div> <!-- .box -->
+			
+		</div> <!-- #recent -->
+		
+		<!-- Follow -->
+		<div class="col-lg-4 col-md-4 col-sm-4" id="follow">
+		
+			<div class="box">
+			
+				<h2>Get in touch</h2>
+					
+				<div class="contact_container">
+					<div class="heading">Contact Us:</div>
+					<div class="text">
+						Email: &nbsp;&nbsp;&nbsp;&nbsp;contact@site.com<br>
+						Contact: &nbsp;222-111-333
+					</div>
+				</div> <!-- .contact_container -->
+				
+				<div class="social_container">
+					<div class="heading">Follow Us:</div>
+					<div class="icons">
+						<div id="icon_fb"></div>
+						<div id="icon_gplus"></div>
+						<div id="icon_tw"></div>
+						<div id="icon_rss"></div>
+						<div id="icon_pin"></div>
+						<div id="icon_in"></div>
+					</div>
+				</div> <!-- .social_container -->
+				
+			</div> <!-- .box -->
+			
+		</div> <!-- #follow -->
+		
+	</div> <!-- #footer_lnks -->
+	
+	<div class="row" id="footer_copy">
+	
+		<div class="col-lg-12">
+			<div class="text">Copyright &copy; 2016 HISTORICALMONUMENTS | All Rights Reserved.</div>
+		</div>
+	
+	</div> <!-- #footer_copy -->
+	
+	<!-- Footer Ends -->
+	
+    
+</div> <!-- #main-container -->
+
+<script src="js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

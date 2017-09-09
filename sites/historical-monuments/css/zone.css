@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Post Title ===================== */
+#post .content {
+	padding-top: 2%;
+}
+#post .content ul {
+	font-size: 18px;
+	padding: 0;
+	list-style-position: inside;
+}
+#post .content ul li a{
+	font-family: calibri;
+}

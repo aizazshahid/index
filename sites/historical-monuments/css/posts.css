@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* path =========================== */
+#path > div {
+	padding: 5% 15% 0 15%;
+	
+}
+#path .links {
+	font-family: arial;
+	text-transform: uppercase;
+	//border: 1px solid red;
+	position: relative;
+	border-bottom: 1px dashed rgba(83, 43, 9,.5);
+}
+
+#path .links a {
+	font-family: calibri;
+}
+#path .links a:hover {
+	text-decoration: none;
+}
+
+/* Post Main content ===================== */
+#post {
+//margin-top: 5%;
+}
+
+#post > div {
+	//border: 1px solid red;
+	padding: 3% 15% 5% 15%;
+}
+#post .main_hd {
+	border-bottom: 1px solid rgba(40,40,40,.2);
+	margin-bottom: 40px;
+}
+#post .main_hd h2 {
+	font-family: Tahoma;
+	font-size: 35px;
+}
+#post > div > img {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: auto;
+	border-left: 5px solid rgba(40,40,40,1);
+}
+#post .content {
+	font-family: calibri;
+	font-size: 20px;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	text-indent: 80px;
+	text-align: justify;
+	padding: 5% 5% 1% 5%;
+	margin-bottom: 4%;
+	border-left: 3px dashed rgba(40,40,40,.2);
+}
+#post .more {
+	
+}
+#post .more .items {
+	background-color: #004563;
+	width: 16.66%;
+	height: 100px;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+#post .more img {
+	width: 100%;
+	height: auto;
+	opacity: .4;
+	cursor: pointer;
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+}
+#post .more img:hover {
+	opacity: 1;
+}
+#download_lnk img {
+	width: 200px;
+	margin-left: -100px;
+}
+
+/* More Images =================== */
+#more {
+	background: rgb(240,240,240);
+	//margin-top: 4%;
+	//margin-bottom: 4%;
+	position: relative;
+}
+#more > div {
+	border: 1px solid red;
+	width: 895px;
+	margin: 0 35% 10% 15%;
+}
+#more .items {
+	background-color: #004563;
+	width: 12.5%;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+#more img {
+	width: 100%;
+	height: auto;
+	opacity: .3;
+	cursor: pointer;
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+}
+#more img:hover {
+	opacity: 1;
+}
+#grid_view {
+	position: fixed;
+	background: rgba(40,40,40,.8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+#grid_view .image {
+	//border: 1px solid red;
+	margin: 5% 15%;
+	width: 70%;
+	height: 82%;
+	overflow: hidden;
+}
+#grid_view .image img {
+	height: 100%;
+}
+
+#grid_view .close {
+	position: absolute;
+	font-size: 26px;
+	top: 5%;
+	right: 5%;
+	color: rgb(240,240,240);
+	opacity: 1;
+}
+
+
+/* About Us ================ */
+#about {
+
+}
+#about img {
+	width: 100%;
+	height: auto;
+}

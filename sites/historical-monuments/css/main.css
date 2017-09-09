@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* Slider ===================== */
+#slider_grid {
+	background: rgb(240,240,240);
+	margin-top: 4%;
+	margin-bottom: 4%;
+	position: relative;
+}
+#slider_grid .items {
+	background-color: #004563;
+	width: 12.5%;
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+#slider_grid img {
+	width: 100%;
+	height: auto;
+	opacity: .3;
+	cursor: pointer;
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+}
+#slider_grid img:hover {
+	opacity: 1;
+}
+#grid_view {
+	position: fixed;
+	background: rgba(40,40,40,.8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+#grid_view .image {
+	//border: 1px solid red;
+	margin: 5% 15%;
+	width: 70%;
+	height: 82%;
+	overflow: hidden;
+}
+#grid_view .image img {
+	height: 100%;
+}
+
+#grid_view .close {
+	position: absolute;
+	font-size: 26px;
+	top: 5%;
+	right: 5%;
+	color: rgb(240,240,240);
+	opacity: 1;
+}
+
+#slider {
+	background: rgb(240,240,240);
+}
+
+#slider > div {
+	margin-bottom: 5%;
+}
+#slider .slider_container {
+	width: 84%;
+	margin: 0 8%;
+	border-size: 3px;
+	border-left: 3px solid rgba(210,210,210,.8);
+	border-right: 3px solid rgba(210,210,210,.8);
+	border-bottom: 2px solid rgba(210,210,210,.1);
+	box-shadow: 0px 8px 9px -3px rgba(40,40,40,.8);
+}
+#slider .slider_container img {
+	width: 100%;
+	height: auto;
+	transition: 1s;
+}
+#slider .slider_container .shadow {
+	width: 83.5%;
+	height: 99.5%;
+	box-shadow: 0px 40px 100px 0px rgba(40,40,40,.2) inset;
+	position: absolute;
+}
+#slider .slider_container .text_container {
+	display: block;
+	position: absolute;
+	padding: 2% 2% 2% 15%;
+	background: rgba(240,240,240,.6);
+	width: 100%;
+	bottom: 4%;
+	right: 0;
+	left: 0;
+}
+#slider h2 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1%;
+}
+#slide_text1, #slide_text2, #slide_text3, #slide_text4, #slide_text5, #slide_text6, #slide_text7, #slide_text8 {
+	display: none;
+}
+
+/* Search Area ================== */
+#search {
+	height: 799px;
+	background: url("../img/world_map.png") -500px 0px no-repeat fixed;
+	background-size: 150%;
+	background-color: rgb(40,40,40);
+	transition-property: background-size;
+	transition-duration: 1s;
+}
+#search > div {
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 84%;
+}
+#search_lt_box {
+	width: 430px;
+	//border: 1px solid orange;
+	margin-top: 165px;
+	float: left;
+}
+#search_lt_box .text {
+	color: rgb(240,240,240);
+	font-size: 60px;
+	letter-spacing: 5px;
+}
+#search_lt_box .arrow {
+	position: absolute;
+	margin-left: 12%;
+	margin-top: 30px;
+	width: 23%;
+}
+#search_lt_box .arrow img {
+	width: 100%;
+}
+#search_rt_box {
+	//border: 1px solid red;
+	position: absolute;
+	right: 5%;
+	top: 165px;
+	cursor: pointer;
+	width: 55%;
+}
+#search_rt_box input[type=search] {
+	background: url("../img/search.png") right center no-repeat;
+	background-color: rgb(240,240,240);
+	background-position: 96% 50%;
+	background-size: 7%;
+	position: absolute;
+	width: 250px;
+	height: 45px;
+	padding: 5px 40px 5px 10px;
+	margin: 60px 0 0 45px;
+	border: 5px solid #834309;
+	color: rgb(40,40,40);
+	z-index: 4;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .5s;
+	transition-delay: .5s;
+}
+#search_rt_box img {
+	transform: rotate(-15deg);
+	transition-property: transform;
+	transition-duration: .5s;
+	width: 100%;
+}
+
+
+/* Advertise Area ==================== */
+#ad_area {
+	height: 300px;
+	border-bottom: 15px solid #459ab8;
+}
+#ad_area .main {
+	background: url("../img/ad/globe.png") left bottom no-repeat;
+	background-size: 30%;
+	position: relative;
+	width: 100%;
+	height: 285px;
+	z-index: 8;
+}
+#ad_area .places {
+	position: absolute;
+	width: 25%;
+	right: 45%;
+	bottom: 22px;
+}
+#ad_title {
+	font-family: tahoma;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	color: #004563;
+	position: absolute;
+	top:20px;
+	right:260px;
+}
+#ad_content {
+	position: absolute;
+	top: 60px;
+	right: 80px;
+	width: 891px;
+	height: 184px;
+	background: url("../img/ad/area.png") no-repeat;
+	background-size: 100%;
+	padding-top: 45px;
+	padding-left: 40px;
+	font-size: 45px;
+	font-family: calibri;
+	text-align: center;
+	color: #459ab8;
+}
+#ad_area .stripe {
+	background: rgb(40,40,40);
+	position: absolute;
+	height: 25px;
+	left: 0;
+	right: 0;
+	top: 260px;
+	z-index: 7;
+}
+
+
+/* Seven Wonders ==================== */
+#wonders {
+	background: url("../img/wonders.jpg") no-repeat fixed;
+	background-size: 100% 100%;
+	height: 799px;
+}
+#wonders > div {
+	height: 100%;
+	z-index: 11;
+}
+#wonders .bg {
+	background-color: #459AB8;
+	opacity: .2;
+	margin-top: 2%;
+	margin-left: 2%;
+	height: 93%;
+	width: 96%;
+}
+#wonders .bt_container {
+	//border: 5px solid rgba(0,0,255,.6);
+	position: absolute;
+	width: 100%;
+	top: 43%;
+	text-align: center;
+}
+#wonders .bt {
+	//border: 5px solid rgba(255,0,0,.6);
+	position: relative;
+	margin: auto;
+	opacity: 1;
+}
+
+#wonders .bt button {
+	background-color: transparent;
+	border: 5px solid rgb(240,240,240);
+	border-radius: 10px;
+	//width: 270px;
+	height: 72px;
+	padding: 0px 40px;
+	color: rgb(240,240,240);
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 4px;
+	transition:.2s;
+}
+#wonders .bt button:hover {
+	background: rgb(240,240,240);
+	color: #834309;
+}
